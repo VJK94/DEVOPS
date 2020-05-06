@@ -1,0 +1,12 @@
+- hosts: Linux1
+
+  tasks:
+    - name: Apache2
+      apt: name=apache2 update_cache=yes state=latest
+      become: yes
+    - name: Mysql
+      apt: name=mysql-server update_cache=yes state=latest
+      become: yes
+    - name: Java8
+      apt: name=openjdk-8-jdk update_cache=yes
+      become: yes
