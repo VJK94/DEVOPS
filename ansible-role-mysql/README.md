@@ -10,7 +10,7 @@ No special requirements; note that this role requires root access, so either run
 
     - hosts: database
       roles:
-        - role: geerlingguy.mysql
+        - role: mysql
           become: yes
 
 ## Role Variables
