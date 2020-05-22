@@ -1,0 +1,9 @@
+
+To create a self hosted docker registry: 
+docker run -d -p 5000:5000 --name my-registry registry:2
+
+
+To push the image to registry:
+docker tag [image name] localhost:5000/[image name]
+
+docker push localhost:5000/[image name]
